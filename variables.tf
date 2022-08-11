@@ -1,12 +1,12 @@
 variable "rg-name" {
-  type    = string
+  type = string
 }
 variable "rg-location" {
-  type    = string
+  type = string
 }
 
 variable "vnet-name" {
-  type    = string
+  type = string
 }
 
 variable "address-space" {
