@@ -11,4 +11,6 @@ resource "azurerm_subnet" "lab-subnets" {
   virtual_network_name = azurerm_virtual_network.lab-vnet.name
   name                 = var.subnet-name[count.index]
   address_prefixes     = [var.subnet-prefixes[count.index]]
+
+  depends_on = [azurerm_virtual_network.lab-vnet]
 }
